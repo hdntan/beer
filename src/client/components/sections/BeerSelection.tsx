@@ -29,7 +29,7 @@ export const BeerSelection: FC = () => {
 		{ idx: 7, name: 'Ruby',         unit_price: 0.375, quantity: 0 },
 	]
 
-	const EURO_TO_SOL = 0.0069981;	// @ 27/08/2024
+	const DOLA_TO_SOL = 0.0074;	// @ 12/09/2024
 
 	const [pizzas, setBeerSaiGon] = useState<Beer[]>(initialBeerSaiGon);
 	const updateQuantity = (idx: number, newQuantity: number) => {
@@ -42,7 +42,7 @@ export const BeerSelection: FC = () => {
 
 	useEffect(() => {
 		const totalPrice = pizzas.reduce((sum, pizza) => sum + (pizza.unit_price * pizza.quantity), 0);
-		setAmount(new BigNumber(totalPrice * EURO_TO_SOL));
+		setAmount(new BigNumber(totalPrice * DOLA_TO_SOL));
 	}, [pizzas, setAmount]);
 
 	const onMinus = (idx: number) => {
