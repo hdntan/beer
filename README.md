@@ -12,16 +12,19 @@ This is a POS (Point of Sale) project for selling beer in Saigon, using Solana b
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-## Hình ảnh
+## Image
 
 *UI Home Page*
 
 ![POS Beer Saigon](./public/home-page.jpg)
 
+*UI POS Page*
 
+![POS Beer Saigon](./public/pos-page.jpg)
 
+*UI Payment Page*
 
-
+![POS Beer Saigon](./public/payment-page.jpg)
 
 ## Description
 
