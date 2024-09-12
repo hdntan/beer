@@ -24,7 +24,7 @@ This is a POS (Point of Sale) project for selling beer in Saigon, using Solana b
 
 *UI Payment Page*
 
-![POS Beer Saigon](./public/payment-page.jpg)
+![POS Beer Saigon](./public/payment.jpg)
 
 ## Description
 
