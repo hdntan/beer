@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../../../../public/beer.png'); 
+    background-color: #222222;
+    /* background-image: url('../../../../public/beer.png');  */
     background-size: cover;
     background-position: center;
 }

@@ -67,19 +67,29 @@ export const BeerSelection: FC = () => {
 		<div><hr /></div>
 		<div>&nbsp;</div>
 
-		<table>
-			<tbody>
-			{pizzas.map((pizza) => (
-				<tr key={pizza.idx}>
-					<td>&nbsp;&nbsp;</td><td className={css.pizzaName}>{pizza.name}</td>
-					<td className={css.pizzaPrice}>{pizza.unit_price}&nbsp;$</td>
-					<td><button className={css.plusminus} onClick={() => onMinus(pizza.idx)}>-</button></td>
-					<td className={css.quantity}> {pizza.quantity} </td>
-					<td><button className={css.plusminus} onClick={() => onPlus(pizza.idx)}>+</button></td>
-				</tr>
-			))}
-			</tbody>
-		</table>
+	
+		<table className={css.table}>
+  <tbody>
+    {pizzas.map((pizza) => (
+      <tr key={pizza.idx} className={css.tr}>
+		
+        <td className={` ${css.pizzaName}`}>{pizza.name}</td>
+        <td className={`${css.pizzaPrice}`}>{pizza.unit_price}&nbsp;$</td>
+        <td className={css.td}>
+          <button className={css.plusminus} onClick={() => onMinus(pizza.idx)}>
+            -
+          </button>
+        </td>
+        <td className={css.td}>{pizza.quantity}</td>
+        <td className={css.td}>
+          <button className={css.plusminus} onClick={() => onPlus(pizza.idx)}>
+            +
+          </button>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
 
 	  </div>
 	);

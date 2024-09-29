@@ -28,7 +28,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: purple; /* Thay thế #yourColor bằng màu bạn muốn */
+        /* background-color: purple;  */
+        /* Thay thế #yourColor bằng màu bạn muốn */
     }
 
     .top {
